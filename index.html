@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>THE RESTAURENT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            /* box-sizing: border-box; */
+        }
+        body{
+            font-family: 'Baloo Bhai 2','cursive';
+        }
+        #first{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        #first::before{
+            /* width:300px;
+            height:200px; */
+            content:"";
+            background-color: rgb(12, 12, 11);
+            position:absolute;
+            top: 0px;
+            left: 0px;
+            width:100%;
+            height:100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+        
+        #nav{
+            display:flex;
+            flex-wrap: wrap;
+            float: left;
+            text-decoration: none;
+        }
+        #nav li{
+            padding: 10px 30px;
+            border: 2px solid black;
+            margin: 3px;
+            border-radius: 10px;
+            list-style: none;
+            color:aliceblue;
+        }
+        #nav li:hover{
+            color: red;
+        }
+        #img{
+            padding: 10px;
+        }
+        section::before{
+            content:"";
+            position: absolute;
+            background: url('res2.jpg') no-repeat center center/cover;
+            /* background-size: 100%; */
+            top:0px;
+            right:0px;
+            width: 100%;
+            height: 630px;
+            z-index: -2;
+            opacity: 0.7;
+        }
+        #sec{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 2rem;
+            text-align: center;
+        }
+        .btn{
+            font-size: 20px;
+            border: 2px solid white;
+            background-color: black;
+            color:white;
+            border-radius: 10px;
+            padding:10px;
+        }
+        #asid{
+            display:flex;
+            /* float:left; */
+            
+        }
+        .item1{
+            background-color: rgb(238, 237, 234);
+            border: 3px solid black;
+            margin:5px;
+            border-radius: 10px;
+            display:flex;
+            /* flex-wrap: wrap; */
+            text-align: center;
+            flex-direction: column;
+            width:33vw;
+        }
+        .after{
+            margin:20px;
+            display:block;
+            text-align: center;
+        }
+        #burg{
+            display:block;
+            margin:20px auto 20px auto;
+        }
+        #pizza{
+            display:block;
+            margin:20px auto 20px auto;
+        }
+        #deleiver{
+            display:block;
+            margin:20px auto 20px auto;
+        }
+        #bg{
+            background: url('bg2.jpg') no-repeat center center/cover;
+            background-size: 100%;
+            /* background-repeat: no-repeat; */
+            width:100%;
+            height:100%;
+            flex-direction: column;
+            align-items: center;
+            display:flex;
+            overflow: hidden;
+        }
+        #bg3{
+            display:flex;
+            /* flex-wrap: wrap; */
+        }
+        #bg ul{
+            display:flex;
+            align-items: center;
+        }
+        #bg ul li{
+            margin:20px;
+            list-style: none;
+        }
+        @media (max-width:500px){
+           #asid{
+            display:flex;
+            flex-direction: column;}
+
+            .item1{
+            background-color: rgb(238, 237, 234);
+            border: 3px solid black;
+            margin:5px;
+            border-radius: 10px;
+            display:flex;
+            /* flex-wrap: wrap; */
+            text-align: center;
+            flex-direction: column;
+            width:96vw;
+        }
+        @media (max-width:800px){
+            section::before{
+            content:"";
+            position: absolute;
+            background: url('res2.jpg') no-repeat center center/cover;
+            /* background-size: 100%; */
+            top:0px;
+            right:0px;
+            width: 100%;
+            height: 900px;
+            z-index: -2;
+            opacity: 0.7;
+        }
+        }
+        @media (max-width:321px){
+            section::before{
+            content:"";
+            position: absolute;
+            background: url('res2.jpg') no-repeat center center/cover;
+            /* background-size: 100%; */
+            top:0px;
+            right:0px;
+            width: 100%;
+            height: 1000px;
+            z-index: -2;
+            opacity: 0.7;
+        }
+        }
+        }
+    </style>
+</head>
+<body>
+    
+        <div id="first">
+            
+            <img src="res.jpg" alt="not found" height="300" width="300" id="img">
+            
+            <nav id="navbar">
+                <ul id="nav">
+                    
+                    <li>
+                        HOME
+                    </li>
+                    <li>
+                        ABOUT
+                    </li>
+                    <li>
+                        MEMBERSHIP
+                    </li>
+                    <li>
+                        OFFERS
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <section id="sec">
+            
+            <h1>Welcome To The Restaurent</h1>
+            <div>We give the best dishes with finest service to make you smile</div>
+            <div>All our food is organic ensuring your health and safety</div>
+            <button class="btn">order now</button>
+    </section>
+    <h1 class="after">Our services</h1>
+    <aside id="asid">
+        <div class="item1">
+            <img src="burger.jpg" alt="" height="100" width="120" id="burg">
+            <h1>Food Catering</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam quos possimus architecto, dolorem eos velit repellendus quae similique voluptatibus, voluptate, blanditiis magnam voluptatem. Facere maxime odio provident, veritatis rerum accusantium!</p>
+        </div>
+        <div class="item1">
+            <img src="pizza.jpg" alt="" height="100" width="120" id="pizza">
+            <h1>Bulk Ordering</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit blanditiis eaque non modi earum harum, quam iusto reiciendis molestias quibusdam fugiat amet esse sequi nisi itaque consequatur totam dolores recusandae laudantium quis accusantium obcaecati.</p>
+        </div>
+        <div class="item1">
+            <img src="deleiver.jpg" alt="" height="100" width="120" id="deleiver">
+            <h1>Food Ordering</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam deserunt nesciunt quis iure, doloribus vitae, numquam aliquam quisquam odio consectetur illo suscipit nihil vel, optio maiores? Quibusdam dolore facilis, corporis voluptatibus ratione illum magni.</p>
+        </div>
+    </aside>
+    <div id="bg">
+        <h1>OUR CUSTOMERS</h1>
+        <ul id="bg3">
+            <li><img src="meta.jpg" alt="" height="100px" width="100px"></li>
+            <li><img src="amazon.jpg" alt="" height="100px" width="100px"></li>
+            <li><img src="apple.jpg" alt="" height="100px" width="100px"></li>
+            <li><img src="netflix.png" alt="" height="100px" width="100px"></li>
+            <li><img src="google.png" alt="" height="100px" width="100px"></li>
+
+        </ul>
+    </div>
+</body>
+</html>
